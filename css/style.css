@@ -10,7 +10,7 @@ body {
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1.35rem;
 }
 
 .main, .side {
@@ -45,7 +45,7 @@ p {
 }
 
 #description {
-  margin-top: 15px;
+  margin-top: 25px;
 }
 
 .side {
@@ -69,13 +69,32 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.75s;
 }
 
-a {
+a, .selected {
   width: 40px;
   height: 40px;
   margin: 10px;
   font-size: 0.8rem;
   color: white;
   text-decoration: none;
+}
+
+.selected {
+  color: black;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.block:hover {
+  color: black;
+  background-color: white;
+  border-radius: 12px;
 }
