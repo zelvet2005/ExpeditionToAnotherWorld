@@ -20,7 +20,7 @@ p {
 .header {
   width: 100%;
   min-height: 60px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   background-color: #151515;
   position: relative;
   top: -60px;
@@ -42,10 +42,7 @@ p {
   float: right;
   margin-left: 24%;
   padding: 10px;
-  animation-name: main;
-  animation-iteration-count: 1;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
+  margin-right: 3.25%;
 }
 
 .main h1 {
@@ -67,10 +64,7 @@ p {
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
-  animation-name: side;
-  animation-iteration-count: 1;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
+  margin-left: 3.25%;
 }
 
 .block {
@@ -111,26 +105,9 @@ a, .selected {
   border-radius: 12px;
 }
 
-@keyframes main {
-  from {
-    margin-right: 1%;
-  }
-  to {
-    margin-right: 3.25%;
-  }
-}
-
-@keyframes side {
-  from {
-    margin-left: 1%;
-  }
-  to {
-    margin-left: 3.25%;
-  }
-}
-
 @keyframes header {
   to {
     top: 0;
+    margin-bottom: 60px;
   }
 }
