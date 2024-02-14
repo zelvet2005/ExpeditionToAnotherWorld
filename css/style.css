@@ -53,7 +53,7 @@ p {
 }
 
 #description {
-  font-size: 1.35rem;
+  font-size: 1.7rem;
   margin-top: 25px;
   text-transform: none;
 }
@@ -72,8 +72,8 @@ p {
 }
 
 .block {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 5px;
   border: 1px solid white;
   display: flex;
@@ -83,10 +83,10 @@ p {
 }
 
 a, .selected {
-  width: 40px;
-  height: 40px;
-  margin: 10px;
-  font-size: 0.8rem;
+  width: 50px;
+  height: 50px;
+  margin: 3%;
+  font-size: 1.1rem;
   text-transform: uppercase;
   color: white;
   text-decoration: none;
@@ -95,8 +95,8 @@ a, .selected {
 .selected {
   color: black;
   background-color: white;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 5px;
   border: 1px solid white;
   display: flex;
@@ -115,4 +115,58 @@ a, .selected {
     top: 0;
     margin-bottom: 60px;
   }
+}
+
+@media (max-width: 1750px) {
+  a, .selected, .block {
+      width: 45px;
+      height: 45px;
+      font-size: 1rem;
+  }
+}
+@media (max-width: 1550px) {
+  a, .selected, .block {
+      width: 40px;
+      height: 40px;
+      font-size: 0.9rem;
+  }
+}
+@media (max-width: 1350px) {
+  .side {
+    height: 270px;
+  }
+  a, .selected, .block {
+      width: 35px;
+      height: 35px;
+      font-size: 0.75rem;
+  }
+}
+@media (max-width: 1200px) {
+    .main {
+      width: 90%;
+      margin-right: 4%;
+    }
+    .side {
+      width: 90%;
+      height: 70px;
+      position: inherit;
+      margin: 20px 5%;
+    }
+    a, .selected, .block {
+      width: 40px;
+      height: 40px;
+      margin: 1%;
+      font-size: 0.84rem;
+    }
+}
+@media (max-width: 1060px) {
+    .side {
+      height: 160px;
+    }
+    a, .selected, .block {
+      width: 60px;
+      height: 60px;
+      margin: 1%;
+      font-size: 1.1rem;
+    }
 }
