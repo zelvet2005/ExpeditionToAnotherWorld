@@ -11,4 +11,4 @@ function setTime() {
   }`;
 }
 
-setInterval(setTime, 100);
+setInterval(setTime, 10);
